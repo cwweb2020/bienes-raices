@@ -1,0 +1,25 @@
+extends ../layout/index
+
+block contenido
+    
+    section.form-total
+        if errores
+            div.errores
+                ul
+                    each error in errores
+                        li= "* " + error.msg
+
+        h2.form-title Crear cuenta
+        form.form-crear(method='POST' action="/auth/registro")
+            input(type="text" placeholder="nombre" name="nombre" value= nombre)
+            input(type="email" placeholder="email" name="email" value= email)
+            input(type="password" placeholder="password" name="password")
+            input(type="password" placeholder="repetir password" name="repetirPassword")
+            button(type="submit") crear cuenta
+
+        div.form-footer
+            a(href='/auth/olvido-password') Olvidaste la contraseña?
+            a(href='/auth/login') Ya tienes cuenta? Iniciar Sesión
+
+        script.
+            console.log(errores) // Solo para verificar si errores está definido

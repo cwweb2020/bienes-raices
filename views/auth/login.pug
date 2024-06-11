@@ -1,0 +1,13 @@
+extends ../layout/index
+
+block contenido
+    
+    section.form-total
+        h2.form-title= pagina
+        form.form-crear(action="")
+            input(type="email" placeholder="email")
+            input(type="password" placeholder="password")
+            button(type="submit") Ingresar
+        div.form-footer
+            a(href='/auth/olvido-password') Olvidaste la contraseña?
+            a(href='/auth/registro') No tienes cuenta? Crear cuenta

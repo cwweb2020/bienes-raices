@@ -1,0 +1,142 @@
+body {
+  /* background-color: tan; */
+  background-color: #d3d3d324;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-title {
+  text-align: center;
+}
+nav {
+  display: flex;
+  background: #000000;
+  padding: 0 51px;
+  justify-content: flex-end;
+
+  ul {
+    padding: 0;
+    list-style: none;
+    width: 48%;
+    display: flex;
+    min-height: 4vh;
+    align-items: center;
+    justify-content: space-evenly;
+
+    li {
+      color: black;
+      text-decoration: none;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+      }
+      a:hover {
+        text-decoration: underline;
+        transition: all 500ms;
+      }
+    }
+  }
+}
+
+.text-center {
+  font-size: 17px;
+}
+
+/* formulario */
+.form-total {
+  background-color: #ffffff;
+  padding: 20px 15px 45px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 380px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 95px;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.form-crear {
+  width: 83%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-crear input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-crear input:focus {
+  border-color: #3f51b5;
+  outline: none;
+  box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
+}
+
+.form-crear button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3f51b5;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-crear button:hover {
+  background-color: #303f9f;
+}
+
+.form-footer {
+  margin-top: 15px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* formulario en sass */
+
+/* errores */
+
+.errores {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  width: 100%;
+}
+.errores > ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.errores > ul > li {
+  border: 1px solid red;
+  padding: 2px 4px;
+  border-radius: 5px;
+}

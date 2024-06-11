@@ -1,0 +1,24 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Bienes raices | #{pagina}      
+    link(rel="stylesheet" href="/style.css") 
+
+  body
+    header
+      h1.main-title Bienvenido a Bienes Raíces
+
+    nav
+      ul
+        li: a(href="#") Inicio
+        li: a(href="#") Acerca de
+        li: a(href="#") Servicios
+        li: a(href="#") Contacto
+
+    main
+        block contenido
+
+    footer
+      p(style="text-align: center;") © 2024 Sitio de Bienes Raices
